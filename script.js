@@ -21,9 +21,9 @@ function addR() {
         let row = document.createElement("tr");
         for(let i = 0; i < numCols; i++){
             let col = document.createElement("td");
-            col.onlclick = function(){
-                this.style.backgroundcolor = colorSelected;
-            }
+            col.onclick = function (){
+                this.style.backgroundColor = colorSelected;
+            };
             row.appendChild(col);
         }
         grid.appendChild(row);
@@ -61,11 +61,11 @@ function addC() {
         grid.appendChild(row);
     }
     else{
-        for(let i = 0; i < rows.lenght; i++){
+        for(let i = 0; i < rows.length; i++){
             let col = document.createElement("td");
-            col.onlclick = function(){
-                this.style.backgroundcolor = colorSelected;
-            }
+            col.onclick = function (){
+                this.style.backgroundColor = colorSelected;
+            };
             rows[i].appendChild(col);
         }
     }
